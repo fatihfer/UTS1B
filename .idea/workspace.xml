@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="511fc8a4-1f51-4fa1-9310-9e3ebe04ee3b" name="Changes" comment="OK">
-      <change afterPath="$PROJECT_DIR$/src/JawabanUTS.java" afterDir="false" />
+    <list default="true" id="511fc8a4-1f51-4fa1-9310-9e3ebe04ee3b" name="Changes" comment="jawab">
+      <change beforePath="$PROJECT_DIR$/src/JawabanUTS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JawabanUTS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667624537666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="OK bang">
+      <created>1667624869709</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667624869709</updated>
+    </task>
+    <task id="LOCAL-00003" summary="OK bang">
+      <created>1667624955723</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667624955723</updated>
+    </task>
+    <task id="LOCAL-00004" summary="jawab">
+      <created>1667625039954</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667625039954</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,6 +91,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="OK" />
+    <MESSAGE value="OK bang" />
+    <MESSAGE value="jawab" />
+    <option name="LAST_COMMIT_MESSAGE" value="jawab" />
   </component>
 </project>
