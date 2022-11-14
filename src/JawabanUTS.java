@@ -2,8 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class JawabanUTS {
-    int jumProdi = 3;
-    static int totalJumlahMahasiswa = 180;
+    static int totalJumlahMahasiswa = 1050;
     public static String[] ti = new String[500];
     public static String[] dkv = new String[300];
     public static String[] tk= new String[250];
@@ -46,23 +45,27 @@ public class JawabanUTS {
         }
     }
 
-    public static void simpanSiswa(int angkaRandom, String siswa) {
-        switch (angkaRandom){
-            case 1:
-                CheckIndexArray (ti,siswa);
-                System.out.println("Anda NIM : TI22");
-                printInfoMahasiswa();
-                break;
-            case 2:
-                CheckIndexArray(dkv,siswa);
-                System.out.println("Anda Mendapatkan Vaksin Sinopharm");
-                printInfoMahasiswa();
-                break;
-            case 3:
-                CheckIndexArray(tk,siswa);
-                System.out.println("Anda Mendapatkan Vaksin Moderna");
-                printInfoMahasiswa();
-                break;
+    public static void simpanSiswa(String siswa) {
+        long mathRandom =  (long) Math.floor(Math.random() * 99_000_000L) + 10_000_000L;
+        if (siswa== null){
+            System.out.println("Masukkan Prodi yang dipilih");
+        }else if(siswa.equals("TI")){
+            CheckIndexArray(ti,siswa);
+            System.out.println("NIM anda : TI22"+mathRandom);
+            printInfoMahasiswa();
+        } else if (siswa.equals("DKV")) {
+            CheckIndexArray(dkv,siswa);
+            System.out.println("NIM anda : DK22"+mathRandom);
+            printInfoMahasiswa();
+        } else if (siswa.equals("TK")) {
+            CheckIndexArray(tk,siswa);
+            System.out.println("NIM Anda : TK22"+mathRandom);
+            printInfoMahasiswa();
+        }else{
+            System.out.println("Masukkan Prodi :");
+            System.out.println("1. TI (Teknik Informatika)");
+            System.out.println("2. DKV (Desain Komunikasi Visual)");
+            System.out.println("3. TK (Teknik Komputer)");
         }
     }
     public static void inputSiswa(){
@@ -73,13 +76,11 @@ public class JawabanUTS {
             System.out.print("Program divisi (prodi) =");
             String namaProdi = inputData.nextLine();
 
-            if (namaSiswa.isBlank()){
-                System.out.println("Nama Mahasiswa Wajib Di Isi");
+            if (namaProdi.isBlank()){
+                System.out.println("Prodi Wajib Di Isi");
                 inputSiswa();
             }else {
-                Random hasilRandom = new Random();
-                int JenisRandom = hasilRandom.nextInt(3)+1;
-                simpanSiswa(JenisRandom,namaSiswa);
+                simpanSiswa(namaProdi);
             }
         }
     }
